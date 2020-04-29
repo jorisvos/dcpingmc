@@ -22,7 +22,7 @@ Now that you've edited the `config.json` you're ready to start the bot.
 # Run as service
 If you want your bot to run as a service, you can do the following:
 
-## Ubuntu
+### Ubuntu
 1. Create a file in the following folder `/etc/systemd/system` named `<your bot name>.service`
 2. Paste the following into the file you just created
 ```
@@ -51,5 +51,11 @@ WantedBy=multi-user.target
 - `sudo systemctl enable <your bot name>.service` - this enables your newly created service, now it'll start at boot
 - `sudo systemctl start <your bot name>.service` - this starts the bot
 
-# Other Operating Systems
-Not yet, if you've done this. Please 
+### Other Operating Systems
+Not yet, if you've done this. Please
+
+# Commands
+- `/help` - Shows a help message with all available commands
+- `/status` - Manually get the status of the server (playercount, playerlist, description, version, etc)
+- `/crash` - Restarts the bot (if run as a service or in a while loop) (essentialy stops the process)
+- `/ping` - Pings the bot

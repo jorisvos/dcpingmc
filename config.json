@@ -1,0 +1,10 @@
+{
+  "botToken":"BOT TOKEN",
+  "commandPrefix":"/",
+  "serverName":"THE NAME OF THE SERVER",
+  "serverIp":"THE IP ADDRESS OF THE SERVER",
+  "serverPort":25565,
+  "interval":30,
+  "embedColor":"0099FF",
+  "statusChannelID":"THE CHANNEL ID WHERE UPDATES SHOULD BE SEND"
+}

@@ -1,0 +1,16 @@
+res.version
+ res.version.name
+ res.version.protocol
+
+res.players
+ res.players.max
+ res.players.online
+ res.players.sample
+  res.players.sample[0].name
+  res.players.sample[0].id
+
+res.description
+ res.description.text
+ res.description.extra
+
+res.favicon

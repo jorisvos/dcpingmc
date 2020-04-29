@@ -1,0 +1,52 @@
+{
+  "name": "DCPingMC",
+  "version": "1.0.0",
+  "description": "Minecraft server ping bot for Discord.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js"
+  },
+  "repository": "",
+  "env": {
+    "token": {
+      "description": "Your discord bot's token.",
+      "required": true
+    },
+    "prefix": {
+      "description": "Your discord bot's prefix, if your not sure then set it to '!'.",
+      "required": true
+    },
+    "serverName": {
+      "description": "The name of your server, this will be used in messages.",
+      "required": true
+    },
+    "ip": {
+      "description": "Minecraft Server ip.",
+      "required": true
+    },
+    "port": {
+      "description": "Minecraft Server port. Default 25565",
+      "required": true
+    },
+    "pingInterval": {
+      "description": "The interval in seconds in which to check for the server status.",
+      "required": true
+    },
+    "embedColor": {
+      "description": "The embed color for Discord messages.",
+      "required": true
+    },
+    "statusChannelID": {
+      "description": "Channel ID of the channel you want your bot to post it's status.",
+      "required": true
+    }
+  },
+  "keywords": [],
+  "author": "Joris Vos",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "mc-ping-updated": "^0.1.1"
+  }
+}

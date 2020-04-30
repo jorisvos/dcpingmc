@@ -1,6 +1,7 @@
 <div align="center">
   <p>
     <a href="https://discord.gg/Ec8bndS"><img src="https://discordapp.com/api/guilds/702634448365289524/embed.png" alt="Discord server" /></a>
+    <a href="https://github.com/jorisvos/dcpingmc/blob/master/LICENSE"><img src="https://img.shields.io/badge/dynamic/json?color=green&label=license&query=%24.license.name&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjorisvos%2Fdcpingmc%2Flicense" alt="License" /></a>
   </p>
 </div>
 

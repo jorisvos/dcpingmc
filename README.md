@@ -1,5 +1,13 @@
+<div align="center">
+  <p>
+    <a href="https://discord.gg/Ec8bndS"><img src="https://discordapp.com/api/guilds/702634448365289524/embed.png" alt="Discord server" /></a>
+  </p>
+</div>
+
 # dcpingmc
 A [Discord.js](https://discord.js.org/#/) bot that pings the specified [Minecraft](https://www.minecraft.net/nl-nl/about-minecraft) server and gives status updates every **n** seconds.
+
+This bot was made for [Koekoekcraft](koekoekcraft.apexmc.co), since we needed one. You can join the Discord
 
 # Commands
 - `/help` - Shows a help message with all available commands

@@ -1,14 +1,14 @@
+# dcpingmc
+A [Discord.js](https://discord.js.org/#/) bot that pings the specified [Minecraft](https://www.minecraft.net/nl-nl/about-minecraft) server and gives status updates every **n** seconds.
+
+This bot was made for [Koekoekcraft](http://koekoekcraft.apexmc.co/), since we needed one. You can join the [Discord](https://discord.gg/Ec8bndS) server and ofcourse also the Minecraft server. Minecraft ip is: koekoekcraft.apexmc.co
+
 <div align="center">
   <p>
     <a href="https://discord.gg/Ec8bndS"><img src="https://discordapp.com/api/guilds/702634448365289524/embed.png" alt="Discord server" /></a>
     <a href="https://github.com/jorisvos/dcpingmc/blob/master/LICENSE"><img src="https://img.shields.io/badge/dynamic/json?color=green&label=license&query=%24.license.name&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjorisvos%2Fdcpingmc%2Flicense" alt="License" /></a>
   </p>
 </div>
-
-# dcpingmc
-A [Discord.js](https://discord.js.org/#/) bot that pings the specified [Minecraft](https://www.minecraft.net/nl-nl/about-minecraft) server and gives status updates every **n** seconds.
-
-This bot was made for [Koekoekcraft](http://koekoekcraft.apexmc.co/), since we needed one. You can join the [Discord](https://discord.gg/Ec8bndS) server and ofcourse also the Minecraft server. Minecraft ip is: koekoekcraft.apexmc.co
 
 # Commands
 - `/help` - Shows a help message with all available commands

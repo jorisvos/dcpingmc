@@ -52,7 +52,7 @@ WantedBy=multi-user.target
 - `sudo systemctl start <your bot name>.service` - this starts the bot
 
 ### Other Operating Systems
-Not yet, if you've done this. Please
+Not yet, if you've done this. Please contact me so I can update this section!
 
 # Commands
 - `/help` - Shows a help message with all available commands

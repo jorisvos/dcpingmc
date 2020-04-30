@@ -1,20 +1,26 @@
 # dcpingmc
 A [Discord.js](https://discord.js.org/#/) bot that pings the specified [Minecraft](https://www.minecraft.net/nl-nl/about-minecraft) server and gives status updates every **n** seconds.
 
+# Commands
+- `/help` - Shows a help message with all available commands
+- `/status` - Manually get the status of the server (playercount, playerlist, description, version, etc)
+- `/crash` - Restarts the bot (if run as a service or in a while loop) (essentialy stops the process)
+- `/ping` - Pings the bot
+
 # Setup
-You need [Node.js](https://nodejs.org/en/) to run this bot. You can download it from[here](https://nodejs.org/en/download/).
-- Open a terminal (CMD) in the root dcpingmc folder and run `npm install` to install the required packages
+You need [Node.js](https://nodejs.org/en/) to run this bot. You can download it from [here](https://nodejs.org/en/download/).
+- Open a terminal (CMD) in the root dcpingmc folder (where the indes.js is located) and run `npm install` to install the required packages
 - You are now ready to run the bot.
 
-Before you run the bot tho, you first have to edit the `config.json`. In this file you specify which server you want information from, as well as the bot token etc.
-- The value of `botToken` should be equal to the token you get from the [Developer Portal](https://discordapp.com/developers/applications) of Discord.
-- The value of `commandPrefix` should be the prefix you want your commands to have, default is `"/"`
-- The value of `serverName` should be equal to the name of the server, e.g. `"My Minecraft Server"`
-- The value of `serverIp` should be equal to the ip of your minecraft serverv, e.g. `"play.myminecraftserver.com"`
-- The value of `serverPort` should be equal to the port of your minecraft server, default is `25565`
-- The value of `interval` should be equal to the interval in seconds you want the bot to update the server status, default `30`
-- The value of `embedColor` should be a hexadecimal number, this will set the color of embedded messages, default is `"#0099FF"`
-- The value of `statusChannelID` should be the ID of the channel you want your status updates to be send in. You can get the ID's by running the bot and then stopping it (with Ctrl+C). It logs all the channel ID's to the console on start.
+Before you run the bot tho, you first have to edit the `config.json`. In this file you specify which server you want information from, as well as information needed by the bot. In the `config.json` file edit the following:
+- `botToken` - you get this from the [Developer Portal](https://discordapp.com/developers/applications) of Discord.
+- `commandPrefix` - default is `/`, this is a prefix to the command. If this is set to `!` you have to do `!help` instead of `/help`
+- `serverName` - this is the name of the minecraft server, e.g. `My Minecraft Server`. This is used in for example status messages.
+- `serverIp` - this is the server ip used to connect to the server, e.g. `play.myminecraftserver.com`
+- `serverPort` - this is the server port, default is `25565`
+- `interval` - default is `30`. This is the interval in secconds a status update should be send to the statusChannel.
+- `embedColor` - default is `#0099FF`. This is the color to use in status messages.
+- `statusChannelID` - this is the channel id of the channel where the bot should send a status update every **interval** seconds. (all channel names with their id's are shown when running the bot).
 
 Now that you've edited the `config.json` you're ready to start the bot.
 - Run `node index.js`
@@ -44,8 +50,8 @@ WantedBy=multi-user.target
 ```
 3. Now you have to change a few things in this file:
 - `Description` - You can change this to whatever you want
-- `WorkingDirectory` - This should be the folder containing the `index.js` file, e.g. `WorkingDirectory=/root/dcpingmc`
-- `ExecStart` - Here you only change the second bit. This should be your working direcotyr + index.js, e.g. `ExecStart=/usr/bin/nodejs /root/dcpingmc/index.js`
+- `WorkingDirectory` - This should be the folder containing the `index.js` file, e.g. `/root/dcpingmc`
+- `ExecStart` - Here you only change the second bit. This should be your working direcotyr + index.js, e.g. `/usr/bin/nodejs /root/dcpingmc/index.js`
 4. Now execute the following commands and your bot is up and running (as a service)
 - `sudo systemctl daemon-reload` - this reloads all .service files
 - `sudo systemctl enable <your bot name>.service` - this enables your newly created service, now it'll start at boot
@@ -54,8 +60,29 @@ WantedBy=multi-user.target
 ### Other Operating Systems
 Not yet, if you've done this. Please contact me so I can update this section!
 
-# Commands
-- `/help` - Shows a help message with all available commands
-- `/status` - Manually get the status of the server (playercount, playerlist, description, version, etc)
-- `/crash` - Restarts the bot (if run as a service or in a while loop) (essentialy stops the process)
-- `/ping` - Pings the bot
+# Used libraries
+- [mc-ping-updated](https://www.npmjs.com/package/mc-ping-updated)
+- [discord.js](https://www.npmjs.com/package/discord.js)
+
+# License
+MIT License
+
+Copyright (c) 2020 Joris Vos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

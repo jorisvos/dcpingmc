@@ -8,6 +8,8 @@ This bot was made for [Koekoekcraft](http://koekoekcraft.apexmc.co/), since we n
     <a href="https://discord.gg/Ec8bndS"><img src="https://discordapp.com/api/guilds/702634448365289524/embed.png" alt="Discord server" /></a>
     <a href="https://github.com/jorisvos/dcpingmc/blob/master/LICENSE"><img src="https://img.shields.io/badge/dynamic/json?color=blue&label=License&query=%24.license.spdx_id&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjorisvos%2Fdcpingmc%2Flicense" alt="License" /></a>
     <img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4%EF%B8%8F-success" alr="Open Source Love" />
+    <img src="https://img.shields.io/badge/Ask%20me-anything-1abc9c" alt="Ask me anything" />
+    <img src="https://img.shields.io/badge/Maintained%3F-yes-green" alt="Maintained? yes" />
   </p>
 </div>
 

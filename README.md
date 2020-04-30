@@ -8,7 +8,7 @@
 # dcpingmc
 A [Discord.js](https://discord.js.org/#/) bot that pings the specified [Minecraft](https://www.minecraft.net/nl-nl/about-minecraft) server and gives status updates every **n** seconds.
 
-This bot was made for [Koekoekcraft](koekoekcraft.apexmc.co), since we needed one. You can join the Discord
+This bot was made for [Koekoekcraft](http://koekoekcraft.apexmc.co/), since we needed one. You can join the [Discord](https://discord.gg/Ec8bndS) server and ofcourse also the Minecraft server. Minecraft ip is: koekoekcraft.apexmc.co
 
 # Commands
 - `/help` - Shows a help message with all available commands
